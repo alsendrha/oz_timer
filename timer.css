@@ -2,7 +2,6 @@
    box-sizing: border-box;
    margin: 0;
    padding: 0;
-
  }
 
  body {
@@ -12,8 +11,18 @@
    background-color: #2c2c2c;
  }
 
+ .main {
+   min-height: 100dvh;
+   display: flex;
+ }
+
  .container {
+   margin: auto;
+   position: relative;
    text-align: center;
+   width: 100%;
+   max-width: 900px;
+   height: 500px;
  }
 
  .footer {
@@ -31,26 +40,16 @@
  }
 
  @media screen and (max-width: 899px) {
-   .title_container {
-     margin-top: 280px;
-   }
 
    .main_title {
-     position: absolute;
-     top: 35%;
-     left: 0;
-     right: 0;
      font-size: 50px;
      font-weight: bold;
      color: rgb(185, 185, 185);
    }
 
    .title {
-     position: absolute;
-     left: 0;
-     right: 0;
      color: rgb(255, 221, 2);
-     top: 30%;
+     top: 50px;
      font-size: 22px;
      font-family: 'Nanum Gothic', sans-serif;
      font-family: 'Nanum Gothic Coding', monospace;
@@ -93,23 +92,17 @@
  }
 
  @media screen and (min-width: 900px) {
-   .title_container {
-     position: relative;
-     margin-top: 280px;
-   }
 
    .main_title {
      font-size: 75px;
+     margin: 0;
      font-weight: bold;
      color: rgb(185, 185, 185);
    }
 
    .title {
-     position: absolute;
-     left: 0;
-     right: 0;
      color: rgb(255, 221, 2);
-     top: -50px;
+     top: -30px;
      font-size: 32px;
      font-family: 'Nanum Gothic', sans-serif;
      font-family: 'Nanum Gothic Coding', monospace;
@@ -124,6 +117,7 @@
      top: 50%;
      left: 50%;
      transform: translate(-50%, -50%);
+
    }
 
    .top {
@@ -162,23 +156,15 @@
  @media screen and (max-width: 590px) {
    .title_container {
      position: relative;
-     margin-top: 280px;
    }
 
    .main_title {
-     position: absolute;
-     top: 55px;
-     left: 0;
-     right: 0;
      font-size: 40px;
      font-weight: bold;
      color: rgb(185, 185, 185);
    }
 
    .title {
-     position: absolute;
-     left: 0;
-     right: 0;
      color: rgb(255, 221, 2);
      top: 20px;
      font-size: 22px;
